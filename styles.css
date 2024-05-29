@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.top {
+    background-color: #4a90e2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.top h2 {
+    margin-bottom: 0.5rem;
+}
+
+.input-section {
+    display: flex;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.note-input, .category-select, .button-circle {
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 20px;
+    border: none;
+    padding: 0 1rem;
+}
+
+.note-input {
+    flex-grow: 2;
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-select {
+    flex-grow: 1;
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #4a90e2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.nota {
+    background-color: white;
+    color: #333;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nota .text {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+.nota .category {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.nota .actions i {
+    cursor: pointer;
+    margin-left: 0.5rem;
+    color: #4a90e2;
+}
+
+.button-clear {
+    background-color: #e94e77;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 2rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-clear:hover {
+    background-color: #d43f63;
+}
+
+.category.trabajo {
+    background-color: #41AEFF;
+}
+
+.category.personal {
+    background-color: #41FF44;
+}
+
+.category.escolar {
+    background-color: #FF41FF;
+}
+
+.category.otros {
+    background-color: #FFF641;
+}
